@@ -53,45 +53,7 @@
 							<h2>Aubrey Hatch</h2>
 							<ul class="actions special">
 								<li><a href="?campaign=582613" class="button primary">Donate</a></li>
-								<div class="classy-inline-embed"></div>
-<script>
-    ;(function (win) {
-      win.egProps = {
-        campaigns: [
-          {
-            campaignId: '582593',
-            donation: {
-              inline: {
-                urlParams: { },
-                elementSelector: '.class-inline-embed'
-              }
-            }
-          }
-        ]
-      }
-      win.document.body.appendChild(makeEGScript())
-
-      /** Create the embed script */
-      function makeEGScript() {
-        var egScript = win.document.createElement('script')
-        egScript.setAttribute('type', 'text/javascript')
-        egScript.setAttribute('async', 'true')
-        egScript.setAttribute('src', 'https://sdk.classy.org/embedded-giving.js')
-        return egScript
-      }
-
-      /* Read URL Params from your website. This could potentially
-        * be included in the embed snippet */
-      function readURLParams() {
-        const searchParams = new URLSearchParams(location.search)
-        const validUrlParams = ['c_src', 'c_src2']
-        return validUrlParams.reduce(function toURLParamsMap(urlParamsSoFar, validKey) {
-          const value = searchParams.get(validKey)
-          return value === null ? urlParamsSoFar : { ...urlParamsSoFar, [validKey]: value }
-        }, {})
-      }
-    })(window)
-</script>
+							<h3><div class="classy-inline-embed"></div></h3>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -214,6 +176,44 @@
       }
     })(window)
   </script>
+<script>
+    ;(function (win) {
+      win.egProps = {
+        campaigns: [
+          {
+            campaignId: '582593',
+            donation: {
+              inline: {
+                urlParams: { },
+                elementSelector: '.class-inline-embed'
+              }
+            }
+          }
+        ]
+      }
+      win.document.body.appendChild(makeEGScript())
+
+      /** Create the embed script */
+      function makeEGScript() {
+        var egScript = win.document.createElement('script')
+        egScript.setAttribute('type', 'text/javascript')
+        egScript.setAttribute('async', 'true')
+        egScript.setAttribute('src', 'https://sdk.classy.org/embedded-giving.js')
+        return egScript
+      }
+
+      /* Read URL Params from your website. This could potentially
+        * be included in the embed snippet */
+      function readURLParams() {
+        const searchParams = new URLSearchParams(location.search)
+        const validUrlParams = ['c_src', 'c_src2']
+        return validUrlParams.reduce(function toURLParamsMap(urlParamsSoFar, validKey) {
+          const value = searchParams.get(validKey)
+          return value === null ? urlParamsSoFar : { ...urlParamsSoFar, [validKey]: value }
+        }, {})
+      }
+    })(window)
+</script>
   
 					</footer>
 
