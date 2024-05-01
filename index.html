@@ -128,44 +128,24 @@
 						</ul>
 
 
-<script>;
-    (function (win) {
+ <script>
+    ;(function (win) {
       win.egProps = {
         campaigns: [
           {
-            campaignId: '582613',
-            donation: {
-              modal: {
-                urlParams: { egrn: true },
-                elementSelector: 'SELECTOR FROM YOUR WEBSITE'
-              },
-                      nudgeTrays: [
-            // CUSTOMIZE YOUR MESSAGE 
-            { 
-              title: 'Help us out!', 
-              content: 'Complete your gift to help make our mission possible.', 
-              ctaLabel: 'Give Now Please', 
-              ctaColor: '#1a73e8', 
-              triggerEvent: 'eg:donation:incomplete', 
-            }, 
-		},
-		{
             campaignId: '582593',
             donation: {
               inline: {
                 urlParams: { },
-                elementSelector: '.classy-inline-embed'
+                elementSelector: '.classy-embed-inline'
               }
-	    }
-		}
-          ],
             }
           }
         ]
       }
       win.document.body.appendChild(makeEGScript())
 
-      /* Create the embed script */
+      /** Create the embed script */
       function makeEGScript() {
         var egScript = win.document.createElement('script')
         egScript.setAttribute('type', 'text/javascript')
